@@ -1,0 +1,4 @@
+  <td><button onclick="window.location.href=
+                    'studenti.edit.php?id=<?=$row['CodiceS']?>'">
+                    Modifica</button></td>
+                

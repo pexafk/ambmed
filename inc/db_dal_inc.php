@@ -11,9 +11,9 @@ function db_connect(){
 }
 function selectAllVisite($conn)
 {
-  $sql="SELECT idV,tipoV,data,ora,descrizionefrom studente order by idV ";
+  $sql="SELECT idV,tipoV,data,ora,descrizione from visita order by idV ";
   $result=$conn->query($sql);
-  $rowsStudenti=$result->fetch_all(MYSQLI_ASSOC);
+  $rowsVisite=$result->fetch_all(MYSQLI_ASSOC);
   return$rows;
 }
 ?>
