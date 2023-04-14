@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Dashboard</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-</head>
-
-<body>
+<?php
+require('/inc/config.php'); 
+require('db_dal_inc.php');
+$conn = db_connect();
+$conn->close();
+?>
+<?php include('header.inc.php'); ?>
 
 <div class="main-wrapper">
 
@@ -33,7 +27,7 @@
 							<a class="header__menu-link" href="information.html">Information</a>
 						</li>
 						<li>
-							<a class="header__menu-link" href="login.html">Login</a>
+							<a class="header__menu-link" href="login.php">Login</a>
 						</li> 
 					</ul>
 				</nav>
