@@ -1,7 +1,7 @@
 
 <?php
-require('/inc/config.php'); 
-require('db_dal_inc.php');
+require('inc/config.php'); 
+require('inc/db_dal_inc.php');
 $conn = db_connect();
 $conn->close();
 ?>
